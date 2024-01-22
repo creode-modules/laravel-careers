@@ -1,7 +1,6 @@
 # Laravel Careers
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/creode/laravel-careers.svg?style=flat-square)](https://packagist.org/packages/creode/laravel-careers)
-[![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/creode-modules/laravel-careers/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/creode-modules/laravel-careers/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/creode-modules/laravel-careers/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/creode-modules/laravel-careers/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/creode/laravel-careers.svg?style=flat-square)](https://packagist.org/packages/creode/laravel-careers)
 
@@ -31,27 +30,10 @@ php artisan vendor:publish --tag="careers-config"
 This is the contents of the published config file:
 
 ```php
+// config for Creode/LaravelCareers
 return [
+    'model' => \Creode\LaravelCareers\Models\Career::class,
 ];
-```
-
-Optionally, you can publish the views using
-
-```bash
-php artisan vendor:publish --tag="careers-views"
-```
-
-## Usage
-
-```php
-$laravelCareers = new Creode\LaravelCareers();
-echo $laravelCareers->echoPhrase('Hello, Creode!');
-```
-
-## Testing
-
-```bash
-composer test
 ```
 
 ## Changelog
