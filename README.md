@@ -1,7 +1,6 @@
 # Laravel Careers
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/creode/laravel-careers.svg?style=flat-square)](https://packagist.org/packages/creode/laravel-careers)
-[![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/creode-modules/laravel-careers/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/creode-modules/laravel-careers/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/creode/laravel-careers.svg?style=flat-square)](https://packagist.org/packages/creode/laravel-careers)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
