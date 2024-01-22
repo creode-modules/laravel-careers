@@ -4,7 +4,6 @@ namespace Creode\LaravelCareers;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Creode\LaravelCareers\Commands\LaravelCareersCommand;
 
 class LaravelCareersServiceProvider extends PackageServiceProvider
 {
@@ -18,8 +17,7 @@ class LaravelCareersServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-careers')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-careers_table')
-            ->hasCommand(LaravelCareersCommand::class);
+            ->hasMigration('create_careers_table')
+            ->runsMigrations();
     }
 }
