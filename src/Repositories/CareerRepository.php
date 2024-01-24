@@ -9,7 +9,8 @@ class CareerRepository extends BaseRepository
     /**
      * {@inheritdoc}
      */
-    protected function getModel(): string {
+    protected function getModel(): string
+    {
         return config('careers.model');
     }
 }
