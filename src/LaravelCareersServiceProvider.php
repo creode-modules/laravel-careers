@@ -4,6 +4,7 @@ namespace Creode\LaravelCareers;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
+use Creode\LaravelCareers\Providers\RouteServiceProvider;
 
 class LaravelCareersServiceProvider extends PackageServiceProvider
 {
@@ -17,7 +18,15 @@ class LaravelCareersServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-careers')
             ->hasConfigFile()
+            ->hasViews('careers')
             ->hasMigration('create_careers_table')
             ->runsMigrations();
+    }
+
+    public function register()
+    {
+        parent::register();
+
+        $this->app->register(RouteServiceProvider::class);
     }
 }

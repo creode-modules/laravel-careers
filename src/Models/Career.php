@@ -13,6 +13,11 @@ class Career extends Model
     use HasFactory, Publishable;
 
     /**
+     * {@inheritdoc}
+     */
+    protected $table = 'careers';
+
+    /**
      * Create a new factory instance for the model.
      */
     protected static function newFactory(): Factory
